@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind  #instance method
-    
+
   end
 
   class TriangleError < StandardError
