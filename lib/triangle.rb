@@ -14,7 +14,7 @@ class Triangle
 
   def kind(triangle_type)
     self.partner = triangle_type
-    if triangle_type.class != triangle_type
+    if triangle_type.class != Triangle
       begin
         raise TriangleError
       rescue TriangleError => error
