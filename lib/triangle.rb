@@ -13,8 +13,20 @@ class Triangle
   #end
 
   def kind  #instance method
-
   end
+
+  def kind(triangle_type)
+  self.partner = triangle_type
+  if triangle_type.class != triangle_type
+    begin
+      raise TriangleError
+    rescue TriangleError => error
+        puts error.message
+    end
+  else
+    triangle_type.partner = self
+  end
+end
 
   class TriangleError < StandardError
   end
