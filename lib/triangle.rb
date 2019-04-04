@@ -13,7 +13,7 @@ class Triangle
   #end
 
   def kind(triangle_type)
-    self.partner = triangle_type
+    self.attributes = triangle_type
     if triangle_type.class != Triangle
       begin
         raise TriangleError
@@ -21,7 +21,7 @@ class Triangle
           puts error.message
       end
     else
-      triangle_type.partner = self
+      triangle_type.attributes = self
     end
   end
 
