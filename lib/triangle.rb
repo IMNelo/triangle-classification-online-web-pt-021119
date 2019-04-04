@@ -12,6 +12,7 @@ class Triangle
   #attributes.each {|key, value| self.send(("#{key}="), value)}
   #end
 
+
   def kind(triangle_type)
     self.attributes = triangle_type
     if triangle_type.class != Triangle
